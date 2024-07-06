@@ -21,9 +21,9 @@ public class PublicController {
         return "hello " + username;
     }
 
-    @GetMapping("/multiply/{a}/{b}")
-    public Integer multiplyTwoNumber(@PathVariable Integer a, @PathVariable Integer b)
+    @GetMapping("/multiply/{num1}/{num2}")
+    public Integer multiplyTwoNumber(@PathVariable Integer num1, @PathVariable Integer num2)
     {
-        return a * b;
+        return num1 * num2;
     }
 }
