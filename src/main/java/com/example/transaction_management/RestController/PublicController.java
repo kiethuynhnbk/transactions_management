@@ -26,4 +26,10 @@ public class PublicController {
     {
         return num1 * num2;
     }
+
+    @GetMapping("/sum/{num1}/{num2}")
+    public Integer addTwoNumber(@PathVariable Integer num1, @PathVariable Integer num2)
+    {
+        return num1 + num2;
+    }
 }
