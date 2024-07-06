@@ -21,10 +21,10 @@ public class PublicController {
         return "hello " + username;
     }
 
-    @GetMapping("/multiply/{num1}/{num2}")
-    public Integer multiplyTwoNumber(@PathVariable Integer num1, @PathVariable Integer num2)
+    @GetMapping("/multiply/{a}/{b}")
+    public Integer multiplyTwoNumber(@PathVariable Integer a, @PathVariable Integer b)
     {
-        return num1 * num2;
+        return a * b;
     }
 
     @GetMapping("/sum/{num1}/{num2}")
