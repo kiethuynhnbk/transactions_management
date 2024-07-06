@@ -20,4 +20,10 @@ public class PublicController {
     {
         return "hello " + username;
     }
+
+    @GetMapping("/multiply/{a}/{b}")
+    public Integer multiplyTwoNumber(@PathVariable Integer a, @PathVariable Integer b)
+    {
+        return a * b;
+    }
 }
