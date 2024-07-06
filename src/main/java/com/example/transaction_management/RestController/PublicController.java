@@ -1,6 +1,7 @@
 package com.example.transaction_management.RestController;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,5 +13,11 @@ public class PublicController {
     public String hello()
     {
         return "hello";
+    }
+
+    @GetMapping("/hello/{username}")
+    public String helloWithUsername(@PathVariable String username)
+    {
+        return "hello " + username;
     }
 }
