@@ -15,6 +15,8 @@ import java.util.Map;
 @ControllerAdvice
 public class ExceptionHandle {
 
+    //should show status code of 400
+    //msg have format erroros: [list of message of each error]
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<?> notValid(MethodArgumentNotValidException ex, HttpServletRequest request) {
         List<String> errors = new ArrayList<>();
