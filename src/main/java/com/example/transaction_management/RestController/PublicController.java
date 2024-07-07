@@ -26,4 +26,10 @@ public class PublicController {
     {
         return num1 * num2;
     }
+
+    @GetMapping("/conflict")
+    public String resolveConflict()
+    {
+        return "Resolve conflict";
+    }
 }
