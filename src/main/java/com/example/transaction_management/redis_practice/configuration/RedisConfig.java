@@ -82,9 +82,4 @@ public class RedisConfig {
         return template;
     }
 
-//    @Bean
-//    public ObjectMapper objectMapper()
-//    {
-//        return new ObjectMapper();
-//    }
 }

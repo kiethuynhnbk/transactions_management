@@ -21,7 +21,6 @@ public class RedisController {
     {
         return redisService.setKeyValue(request.getKey(), request.getValue(),
                 request.getTTL());
-        //return true;
     }
 
     @PostMapping("/setKeyValue/{key}")

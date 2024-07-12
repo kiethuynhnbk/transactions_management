@@ -28,10 +28,4 @@ public class RateLimitingController {
         return rateLimitingService.rateLimitService(id);
     }
 
-    @GetMapping("/test")
-    public String testSetting()
-    {
-        //redisTemplate.opsForValue().set("kiet", new UserInfor(1L, "kiethuynh","abc.jpg"));
-        return "TESTED";
-    }
 }
