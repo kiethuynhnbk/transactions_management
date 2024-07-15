@@ -24,9 +24,4 @@ public class TransactionController {
     {
         return transactionService.performTransaction(transactionRequest);
     }
-
-    public String returnSomeString()
-    {
-        return "hello";
-    }
 }
